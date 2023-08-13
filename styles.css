@@ -2,17 +2,49 @@ html{
     margin: 0;
     height: 100%;
 }
+button {
+    box-shadow: 1px;
+    font-weight: bold;
+    background-color: #072876;
+    color: white;
+    border-radius: 8px;
+}
 body{
-    background-color: grey;
+    background-color: #3c628e;
     display: flex;
+    gap: 16px;
     justify-content: center;
     align-items: center;
     margin: 0; 
     height: 100%;
     padding: 20px;
 }
+.panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow :0;
+    flex-shrink: 3;
+    gap: 16px;
+}
+.clear{
+    align-self: stretch;
+    flex: 1;
+}
+.size{
+    align-self: stretch;
+
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    
+
+}
 .container{
     background-color: white;
+    box-shadow: 1px;
     width: 500px;
     height: 500px;
     display: flex;
@@ -22,4 +54,8 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-grow: 0;
     flex-shrink: 1;
+}
+
+.hovered{
+    background-color: black;
 }
